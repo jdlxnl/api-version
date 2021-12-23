@@ -1,7 +1,8 @@
 {
-    "name": "jdlxnl/apiversion",
-    "description": "Append API version to router",
+    "name": "jdlxnl/api-version",
+    "description": "Add version as prefix to routes and make it available through a facade in Laravel",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jeroen de Lau",

@@ -1,11 +1,30 @@
-###### Package
-Add the package by loading it through composer.
+# Intro
+Enables you to create an API version prefix, and make it available in your code.
 
+After installation you can:
+
+```php
+
+use Jdlx\ApiVersion\Facade\Version;
+
+// get current version number as int
+Version::number();
+
+// Do something only for request to the old api
+if(Version::before(2)){
+
+}
+
+// Do something only for request to the new api
+if(Version::from(2)){
+
+}
+```
+
+## Installation
 ```
 composer require jdlxnl/api-version
 ```
-
-###### API Version
 
 Register the Facade
 ```php
