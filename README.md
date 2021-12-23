@@ -2,26 +2,8 @@
 Add the package by loading it through composer.
 
 ```
-"require": {
-    ...
-    
-    "jdlx/apiversion": "*"
-    
-}
-
- "repositories": [
-        ...
-       
-        {
-            "type": "path",
-            "url": "./jdlx/ApiVersion"
-        }
-    ],
+composer require jdlxnl/api-version
 ```
-
-
-
-
 
 ###### API Version
 
@@ -29,15 +11,15 @@ Register the Facade
 ```php
  // app/Http/kernel.php
  // Add api midleware
- 
+
    protected $middlewareGroups = [
         'api' => [
             SetApiVersion::class,
           ],
     ];
-    
+
 // app/Config/app.php
-  
+
   'providers' => [
         ...
         App\Library\ApiVersion\Provider\ApiVersionServiceProvider::class
@@ -45,7 +27,7 @@ Register the Facade
 
  // change base path for swagger
  // app/Http/Documentation/Server
- 
+
 
 // Add the option to the router
 // routes/api.php

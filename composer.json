@@ -1,0 +1,27 @@
+{
+    "name": "jdlxnl/apiversion",
+    "description": "Append API version to router",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jeroen de Lau",
+            "email": "jeroen.delau@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jdlx\\ApiVersion\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jdlx\\ApiVersion\\Provider\\ApiVersionServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "illuminate/support": "^8.77",
+        "illuminate/http": "^8.77"
+    }
+}
